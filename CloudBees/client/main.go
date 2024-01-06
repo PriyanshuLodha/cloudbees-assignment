@@ -133,7 +133,7 @@ func purchaseTicket(client proto.TrainServiceClient, scanner *bufio.Scanner) {
 	}
 
 	// Get ticket details
-	fmt.Print("Enter user ID: ")
+	fmt.Print("Enter password: ")
 	if !scanner.Scan() {
 		return
 	}
@@ -191,7 +191,7 @@ func viewUsersBySection(client proto.TrainServiceClient, scanner *bufio.Scanner)
 
 // removeUser interacts with the user to remove a user
 func removeUser(client proto.TrainServiceClient, scanner *bufio.Scanner) {
-	fmt.Print("Enter user ID to remove: ")
+	fmt.Print("Enter password to remove: ")
 	if !scanner.Scan() {
 		return
 	}
@@ -210,7 +210,7 @@ func removeUser(client proto.TrainServiceClient, scanner *bufio.Scanner) {
 
 // modifySeat interacts with the user to modify a user's seat
 func modifySeat(client proto.TrainServiceClient, scanner *bufio.Scanner) {
-	fmt.Print("Enter user ID: ")
+	fmt.Print("Enter password: ")
 	if !scanner.Scan() {
 		return
 	}
@@ -235,7 +235,7 @@ func modifySeat(client proto.TrainServiceClient, scanner *bufio.Scanner) {
 
 // getReceiptForUser interacts with the user to get a receipt for a user
 func getReceiptForUser(client proto.TrainServiceClient, scanner *bufio.Scanner) {
-	fmt.Print("Enter user ID for receipt: ")
+	fmt.Print("Enter password for receipt: ")
 	if !scanner.Scan() {
 		return
 	}
